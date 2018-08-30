@@ -1,22 +1,10 @@
-blink, .blink {
-  -webkit-animation: blink 1s step-end infinite;
-  -moz-animation: blink 1s step-end infinite;
-  -o-animation: blink 1s step-end infinite;
-  animation: blink 1s step-end infinite;
+.blinking{
+    animation:blinkingText 0.8s infinite;
 }
-
-@-webkit-keyframes blink {
-  67% { opacity: 0 }
-}
-
-@-moz-keyframes blink {
-  67% { opacity: 0 }
-}
-
-@-o-keyframes blink {
-  67% { opacity: 0 }
-}
-
-@keyframes blink {
-  67% { opacity: 0 }
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
 }
